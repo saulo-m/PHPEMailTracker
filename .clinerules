@@ -1,0 +1,6 @@
+# Cline Rules for Email Tracker PHP
+
+*   **Memory Bank:** Always read all files in `memory-bank/` at the start of a session. Update `activeContext.md` and `progress.md` frequently. Review all files if the user requests `update memory bank`.
+*   **Project Structure:** Standard PHP monolithic application structure observed. `includes/` for core logic, `templates/` for views, `assets/` for static files.
+*   **Technology:** Plain PHP, HTML, CSS, JS. Assumed MySQL database. Apache webserver likely due to `.htaccess`.
+*   **(Add project-specific patterns, preferences, and intelligence here as discovered)**

@@ -1,0 +1,39 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Set the base directory
+RewriteBase /
+
+# Protect sensitive files
+<FilesMatch "^(config\.php|db\.php|functions\.php)$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+
+# Prevent directory listing
+Options -Indexes
+
+# Route all requests to index.php except for assets
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/assets/
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Set security headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "same-origin"
+</IfModule>
+
+# PHP settings
+<IfModule mod_php7.c>
+  php_flag display_errors Off
+  php_flag log_errors On
+  php_value error_log "error_log.txt"
+  php_value max_execution_time 30
+  php_value memory_limit 128M
+  php_value post_max_size 8M
+  php_value upload_max_filesize 2M
+</IfModule>
