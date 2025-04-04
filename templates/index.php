@@ -20,7 +20,7 @@
                     Email Tracker
                 </a>
                 <div class="d-flex">
-                    <a href="https://github.com/" class="btn btn-outline-light btn-sm" target="_blank">
+                    <a href="https://github.com/saulo-m/PHPEMailTracker" class="btn btn-outline-light btn-sm" target="_blank">
                         <i class="fab fa-github me-1"></i> GitHub
                     </a>
                 </div>

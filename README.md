@@ -1,6 +1,6 @@
 # EmailTracker
 
-A modern, full-featured email tracking application that lets you monitor when your emails are opened.
+A modern, full-featured email tracking application that lets you monitor when your emails are opened. This is a PHP implementation inspired by [polarspetroll's EmailTracker](https://github.com/polarspetroll/EmailTracker/) project written in Go.
 
 ![EmailTracker Screenshot](https://example.com/screenshot.png)
 
@@ -27,7 +27,7 @@ A modern, full-featured email tracking application that lets you monitor when yo
 
 1. Clone this repository to your local machine or server:
    ```bash
-   git clone https://github.com/yourusername/EmailTracker.git
+   git clone https://github.com/saulo-m/PHPEMailTracker.git
    ```
 
 2. Upload the `EmailTracker` directory to your PHP-enabled web server
@@ -132,6 +132,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Acknowledgements
 
+- [polarspetroll/EmailTracker](https://github.com/polarspetroll/EmailTracker/) - The original Go implementation that inspired this PHP version
 - [ip-api.com](https://ip-api.com/) for geolocation data
 - [Bootstrap](https://getbootstrap.com/) for UI components
 - [Font Awesome](https://fontawesome.com/) for icons
