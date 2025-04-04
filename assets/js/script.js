@@ -143,8 +143,9 @@ function getNewToken() {
             // Show the result section
             document.getElementById("token-result").style.display = "block";
 
-            // Automatically populate the track email field with the new token
+            // Automatically populate the track email field with the new token and show tracking results
             document.getElementById("tokenLookup").value = json.token;
+            getInfo(); // Trigger tracking info display
 
             // No need to reload history here, it loads on page load
             // setTimeout(loadHistory, 500); // Removed this line
