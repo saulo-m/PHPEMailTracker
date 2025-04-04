@@ -2,8 +2,6 @@
 
 A modern, full-featured email tracking application that lets you monitor when your emails are opened. This is a PHP implementation inspired by [polarspetroll's EmailTracker](https://github.com/polarspetroll/EmailTracker/) project written in Go.
 
-![EmailTracker Screenshot](https://example.com/screenshot.png)
-
 > An email tracking pixel is a 1px by 1px square image created by a line of code that is inserted into an email message. It's not obvious to the recipient that email tracking pixels are present because they are often transparent and placed somewhere discreet in the header or footer of the email. "*nutshell.com*"
 
 ## Features
